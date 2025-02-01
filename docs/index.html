@@ -6,7 +6,7 @@
     <title>GreenCodeGarden 🌱</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
 
@@ -24,18 +24,30 @@
         </nav>
     </header>
 
-    <main>
+    <section id="readme">
         <h2>📜 Описание проекта</h2>
-        <div id="readme-content">Загрузка...</div>
-    </main>
+        <p>Загрузка...</p>
+        <div id="readme-content"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 GreenBandYt | <a href="https://github.com/GreenBandYt">GitHub</a> | <a href="https://zerocoder.ru/">Zerocoder</a></p>
+    </footer>
 
     <script>
-        fetch("https://raw.githubusercontent.com/GreenBandYt/GreenCodeGarden/main/README.md")
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById("readme-content").innerHTML = marked.parse(text);
-            })
-            .catch(error => console.error("Ошибка загрузки README:", error));
+        document.addEventListener("DOMContentLoaded", function () {
+            const readmeContainer = document.getElementById("readme-content");
+
+            fetch("https://raw.githubusercontent.com/GreenBandYt/GreenCodeGarden/main/README.md")
+                .then(response => response.text())
+                .then(text => {
+                    readmeContainer.innerHTML = marked.parse(text);
+                })
+                .catch(error => {
+                    console.error("Ошибка загрузки README:", error);
+                    readmeContainer.innerHTML = "<p>❌ Не удалось загрузить README.</p>";
+                });
+        });
     </script>
 
 </body>
