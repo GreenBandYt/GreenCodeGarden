@@ -7,8 +7,11 @@
 <p>
   <img src="https://img.shields.io/badge/GreenBandYt-Зелёный_код_жизни-32CD32?style=for-the-badge&logo=leaflet&logoColor=white">&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/GreenBandYt/GreenBandYt/main/assets/logos/zerocoder.png" width="28" height="28" alt="Zerocoder" style="vertical-align: middle; border-radius: 50%;">
-  <img src="https://img.shields.io/badge/Zerocoder-Выпускник-%239B59B6?style=for-the-badge">
+  <a href="https://zerocoder.ru/" target="_blank">
+    <img src="https://img.shields.io/badge/Zerocoder-Выпускник-%239B59B6?style=for-the-badge">
+  </a>
 </p>
+
 
 ---
 
