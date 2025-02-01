@@ -12,7 +12,7 @@ body {
 header {
     background-color: #2e7d32;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
 header h1 {
@@ -20,20 +20,35 @@ header h1 {
     font-size: 2em;
 }
 
+/* Навигация */
+nav {
+    padding: 5px 0;
+    min-height: 40px;
+}
+
 nav ul {
-    list-style: none;
+    margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Основной контент */
@@ -41,14 +56,7 @@ main {
     padding: 20px;
 }
 
-/* Подвал */
-footer {
-    background-color: #2e7d32;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-
+/* README Контент */
 #readme-content {
     background: #f9f9f9;
     padding: 20px;
@@ -72,4 +80,12 @@ footer {
 
 #readme-content a:hover {
     text-decoration: underline;
+}
+
+/* Подвал */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
