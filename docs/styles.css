@@ -49,3 +49,27 @@ footer {
     margin-top: 20px;
 }
 
+#readme-content {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+#readme-content h1, 
+#readme-content h2, 
+#readme-content h3 {
+    color: #228B22;
+}
+
+#readme-content a {
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#readme-content a:hover {
+    text-decoration: underline;
+}
