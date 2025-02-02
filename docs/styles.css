@@ -24,8 +24,10 @@ header h1 {
 nav {
     padding: 5px 0;
     min-height: 40px;
+    background-color: #2e7d32;
 }
 
+/* Список навигации */
 nav ul {
     margin: 0;
     padding: 0;
@@ -33,22 +35,38 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
 }
 
+/* Элементы навигации */
 nav ul li {
-    margin: 0 10px;
+    margin: 0 5px; /* Уменьшаем отступы между пунктами */
 }
 
+/* Ссылки в навигации */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 5px 8px;
     font-size: 14px;
+    white-space: nowrap; /* Запрещаем разрыв слов */
 }
 
+/* Ховер-эффект */
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Медиа-запрос для узких экранов */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* На маленьких экранах делаем меню вертикальным */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Добавляем отступы для вертикального списка */
+    }
 }
 
 /* Основной контент */
