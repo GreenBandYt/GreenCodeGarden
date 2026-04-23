@@ -23,7 +23,7 @@
 
 Методичка о том, как вырастить микрозелень на хлорелле, обойтись без удобрений и превратить свои грабли в урожай. Живой рассказ с юмором, экспериментами и неожиданными открытиями.
 
-[📖 Читать книгу](https://greenbandyt.github.io/UnexpectedGardener-Site/) [📄 Введение (скоро)](#
+[📖 Читать книгу](https://greenbandyt.github.io/UnexpectedGardener-Site/) [📄 Введение](https://greenbandyt.github.io/UnexpectedGardener-Site/vvedenie.html)
 
 ---
 
